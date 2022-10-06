@@ -5,10 +5,10 @@ using System.Linq;
 using System.Net.Http;
 using System.Reflection;
 using System.Threading.Tasks;
-using DotNetSearch.Extensions;
+using DotNet.Search.Extensions;
 using McMaster.Extensions.CommandLineUtils;
 
-namespace DotNetSearch
+namespace DotNet.Search
 {
     [Command(
         Name = "dotnet search",
@@ -26,7 +26,7 @@ namespace DotNetSearch
 
         [Required]
         [Argument(0, "query", Description = "The search terms used to find packages")]
-        public string Query { get; set; }
+        public string Query { get; set; } = string.Empty;
 
         [Option("--include-prerelease", "Include prerelease packages", CommandOptionType.NoValue)]
         public bool IncludePrerelease { get; set; }
@@ -35,7 +35,7 @@ namespace DotNetSearch
         public int Skip { get; set; } = SkipResultsDefault;
 
         [Option("-t|--take", "Number of results to display. (Default: 10)", CommandOptionType.SingleValue)]
-        public int Take { get; set; } = TakeDefault;
+        public long Take { get; set; } = TakeDefault;
 
         private async Task OnExecuteAsync()
         {
@@ -240,7 +240,7 @@ namespace DotNetSearch
                 Console.ResetColor();
                 Console.WriteLine($" by {string.Join(",", data.Authors)}\tv{data.Version}");
                 Console.WriteLine($"{data.Description}{Environment.NewLine}");
-                Console.WriteLine($"Tags: {string.Join(',', data.Tags)}");
+                Console.WriteLine($"Tags: {string.Join(",", data.Tags)}");
                 Console.WriteLine($"Downloads: {data.TotalDownloads.ToAbbrString()}");
                 Console.WriteLine($"{Environment.NewLine}----------------------{Environment.NewLine}");
             }

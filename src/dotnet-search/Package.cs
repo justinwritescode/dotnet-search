@@ -1,29 +1,29 @@
 using System.Collections.Generic;
 using Newtonsoft.Json;
 
-namespace DotNetSearch
+namespace DotNet.Search
 {
     public class Package
     {
         [JsonProperty("@id")]
-        public string ApiId { get; set; }
+        public string ApiId { get; set; } = string.Empty;
         
         [JsonProperty("@package")]
-        public string Type { get; set; }
+        public string Type { get; set; } = string.Empty;
 
-        public string Registration { get; set; }
-        public string Id { get; set; }
-        public string Version { get; set; }
-        public string Description { get; set; }
-        public string Summary { get; set; }
-        public string Title { get; set; }
-        public string IconUrl { get; set; }
-        public string LicenseUrl { get; set; }
-        public string ProjectUrl { get; set; }
-        public IEnumerable<string> Tags { get; set; }
-        public IEnumerable<string> Authors { get; set; }
-        public int TotalDownloads { get; set; }
+        public string Registration { get; set; } = string.Empty;
+        public string Id { get; set; } = string.Empty;
+        public string Version { get; set; } = string.Empty;
+        public string Description { get; set; } = string.Empty;
+        public string Summary { get; set; } = string.Empty;
+        public string Title { get; set; } = string.Empty;
+        public string IconUrl { get; set; } = string.Empty;
+        public string LicenseUrl { get; set; } = string.Empty;
+        public string ProjectUrl { get; set; } = string.Empty;
+        public IEnumerable<string> Tags { get; set; } = new List<string>();
+        public IEnumerable<string> Authors { get; set; } = new List<string>();
+        public long TotalDownloads { get; set; }
         public bool Verified { get; set; }
-        public IEnumerable<PackageVersion> Versions { get; set; }
+        public IEnumerable<PackageVersion> Versions { get; set; } = new List<PackageVersion>();
     }
 }

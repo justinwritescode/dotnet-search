@@ -8,7 +8,7 @@ using McMaster.Extensions.CommandLineUtils;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
-namespace DotNetSearch
+namespace DotNet.Search
 {
     class Program
     {

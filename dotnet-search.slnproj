@@ -1,0 +1,9 @@
+<Project Sdk="MSBuild.SolutionSdk">
+  <PropertyGroup>
+    <IncludeInSolutionFile>false</IncludeInSolutionFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="./src/dotnet-search/dotnet-search.csproj" />
+    <ProjectReference Include="./test/dotnet-search-test/dotnet-search-test.csproj" />
+  </ItemGroup>
+</Project>

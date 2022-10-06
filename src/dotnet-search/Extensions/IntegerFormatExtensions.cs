@@ -1,10 +1,10 @@
 ﻿using System.Globalization;
 
-namespace DotNetSearch.Extensions
+namespace DotNet.Search.Extensions
 {
     public static class IntegerFormatExtensions
     {
-        public static string ToAbbrString(this int value)
+        public static string ToAbbrString(this long value)
         {
             switch(value)
             {

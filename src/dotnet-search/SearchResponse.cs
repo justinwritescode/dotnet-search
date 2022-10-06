@@ -1,10 +1,19 @@
 using System.Collections.Generic;
 
-namespace DotNetSearch
+namespace DotNet.Search
 {
+    /// <summary>
+    /// Represents a search response.
+    /// </summary>
     public class SearchResponse
     {
-        public int TotalHits { get; set; }
-        public IEnumerable<Package> Data { get; set; }
+        /// <summary>
+        /// The total number of results.
+        /// </summary>
+        public long TotalHits { get; set; }
+        /// <summary>
+        /// The matching packages
+        /// </summary>
+        public IEnumerable<Package> Data { get; set; } = new List<Package>();
     }
 }

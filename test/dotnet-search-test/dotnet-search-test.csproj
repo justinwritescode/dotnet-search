@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>netcoreapp3.1;net6.0</TargetFrameworks>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../../src/dotnet-search/dotnet-search.csproj" />
+		<PackageVersion Include="Microsoft.NET.Test.Sdk" Version="[17.1.0,)" />
+		<PackageVersion Include="xunit" Version="[2.4.1,)" />
+		<PackageVersion Include="xunit.runner.visualstudio" Version="[2.4.3,)" IncludeAssets="runtime; build; native; contentfiles; analyzers; buildtransitive" PrivateAssets="All" />
+		<PackageVersion Include="coverlet.collector" Version="[3.1.2,)" IncludeAssets="runtime; build; native; contentfiles; analyzers; buildtransitive" PrivateAssets="All" />
+		<PackageVersion Include="Microsoft.TestPlatform" Version="[17.2,)" IncludeAssets="runtime; build; native; contentfiles; analyzers; buildtransitive" PrivateAssets="All" />
+		<!-- <PackageVersion Include="EntityFrameworkCore.Testing.NSubstitute" Version="[4.0.2,)" /> -->
+		<!-- <PackageVersion Include="NSubstitute.Analyzers.CSharp" Version="[1.0.15,)" /> -->
+		<!-- <PackageVersion Include="NSubstitute" Version="[4.4.0,)" /> -->
+  </ItemGroup>
+</Project>
