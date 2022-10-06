@@ -1,29 +1,60 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp2.1</TargetFramework>
-    <IsPackable>true</IsPackable>
-    <PackAsTool>true</PackAsTool>
-    <AssemblyName>dotnet-search</AssemblyName>
+    <TargetFrameworks>netcoreapp3.1;net6.0</TargetFrameworks>
+    <PackageId>dotnet-search</PackageId>
+    <Title>dotnet-search</Title>
+    <Authors>Justin Chase &amp; Bill Pratt</Authors>
+    <Owners>Justin Chase &amp; Bill Pratt</Owners>
+    <Company>Justin Chase</Company>
+    <Product>Justin Chase</Product>
     <Description>Search for Nuget packages using the .NET Core CLI.
 
 Example: dotnet search json.net</Description>
+    <Copyright>Justin Chase &amp; Bill Pratt, All Rights Reserved</Copyright>
+    <PackageTags>dotnet nuget search</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageOutputPath>artifacts</PackageOutputPath>
+    <LangVersion>preview</LangVersion>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <UserSecretsId>f46585c5-564a-6584-1234-eba29ed0cfc7</UserSecretsId>
     <PreserveCompilationContext>true</PreserveCompilationContext>
     <ServerGarbageCollection>true</ServerGarbageCollection>
     <DebugType>portable</DebugType>
-    <PackageLicenseUrl>https://github.com/billpratt/dotnet-search/blob/master/LICENSE</PackageLicenseUrl>
-    <PackageProjectUrl>https://github.com/billpratt/dotnet-search</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/billpratt/dotnet-search</RepositoryUrl>
-    <PackageTags>dotnet, search</PackageTags>
-    <Version>1.0.0</Version>
-    <Authors>Bill Pratt</Authors>
-    <Company />
-    <Product />
   </PropertyGroup>
 
+  <PropertyGroup>
+    <IncludeBuiltProjectOutputGroup>true</IncludeBuiltProjectOutputGroup>
+    <IncludeComFilesOutputGroup>true</IncludeComFilesOutputGroup>
+    <IncludeContentFilesProjectOutputGroup>true</IncludeContentFilesProjectOutputGroup>
+    <IncludeCopyLocalFilesOutputGroup>true</IncludeCopyLocalFilesOutputGroup>
+    <IncludeCopyWinmdArtifactsOutputGroup>true</IncludeCopyWinmdArtifactsOutputGroup>
+    <IncludeDebugSymbolsProjectOutputGroup>true</IncludeDebugSymbolsProjectOutputGroup>
+    <IncludeDocumentationProjectOutputGroup>true</IncludeDocumentationProjectOutputGroup>
+    <IncludeGetResolvedSDKReferences>true</IncludeGetResolvedSDKReferences>
+    <IncludePriFilesOutputGroup>true</IncludePriFilesOutputGroup>
+    <IncludeSatelliteDllsProjectOutputGroup>true</IncludeSatelliteDllsProjectOutputGroup>
+    <IncludeSDKRedistOutputGroup>true</IncludeSDKRedistOutputGroup>
+    <IncludeSGenFilesOutputGroup>true</IncludeSGenFilesOutputGroup>
+    <IncludeSourceFilesProjectOutputGroup>true</IncludeSourceFilesProjectOutputGroup>
+    <IncludeSymbolsProjectOutputGroup>true</IncludeSymbolsProjectOutputGroup>
+    <IncludeTransitiveProjectReferences>true</IncludeTransitiveProjectReferences>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <EmitNuspec>true</EmitNuspec>
+    <EmbedAllSources>true</EmbedAllSources>
+    <RepositoryType>git</RepositoryType>
+    <IncludeSymbols>true</IncludeSymbols>
+    <IncludeSource>true</IncludeSource>
+    <IsPackable>true</IsPackable>
+    <IsNuGetized>true</IsNuGetized>
+  </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="MinVer" PrivateAssets="All" IncludeAssets="runtime; build; analyzers;" />
+    <PackageReference Include="NuGetizer" Version="[0.9.0,)" PrivateAssets="All" IncludeAssets="build;" />
     <PackageReference Include="McMaster.Extensions.CommandLineUtils" Version="2.2.0" />
     <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
     <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="5.2.4" />
