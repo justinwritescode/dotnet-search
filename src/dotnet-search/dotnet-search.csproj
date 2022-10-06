@@ -1,6 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Exe</OutputType>
+    <RootNamespace>DotNetSearch</RootNamespace>
     <TargetFrameworks>netcoreapp3.1;net6.0</TargetFrameworks>
     <PackageId>dotnet-search</PackageId>
     <Title>dotnet-search</Title>
@@ -50,13 +51,26 @@ Example: dotnet search json.net</Description>
     <IncludeSource>true</IncludeSource>
     <IsPackable>true</IsPackable>
     <IsNuGetized>true</IsNuGetized>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="MinVer" PrivateAssets="All" IncludeAssets="runtime; build; analyzers;" />
-    <PackageReference Include="NuGetizer" Version="[0.9.0,)" PrivateAssets="All" IncludeAssets="build;" />
-    <PackageReference Include="McMaster.Extensions.CommandLineUtils" Version="2.2.0" />
-    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
-    <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="5.2.4" />
+    <PackageReference Include="MinVer" Version="[4.2.0,)" PrivateAssets="all" IncludeAssets="runtime; build; analyzers" />
+    <PackageReference Include="NuGetizer" Version="[0.9.0,)" PrivateAssets="all" IncludeAssets="build" />
+    <PackageReference Include="McMaster.Extensions.CommandLineUtils" Version="[4.0.1,)" />
+    <PackageReference Include="Newtonsoft.Json" Version="[13.0.1,)" />
+    <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="[5.2.9,)" />
   </ItemGroup>
+
+  <PropertyGroup Label="MinVer Git Versioning Tool">
+    <MinVerDefaultPreReleasePhase Condition="'$(Configuration)' == 'Testing'">test</MinVerDefaultPreReleasePhase>
+    <MinVerDefaultPreReleasePhase Condition="'$(Configuration)' == 'Local'">alpha</MinVerDefaultPreReleasePhase>
+    <MinVerDefaultPreReleasePhase Condition="'$(Configuration)' == 'Debug'">beta</MinVerDefaultPreReleasePhase>
+    <MinVerDefaultPreReleasePhase Condition="'$(Configuration)' == 'Staging'">rc</MinVerDefaultPreReleasePhase>
+    <MinVerDefaultPreReleasePhase Condition="'$(Configuration)' == 'Release'">preview</MinVerDefaultPreReleasePhase>
+    <MinVerTagPrefix>v</MinVerTagPrefix>
+    <MinVerVerbosity>normal</MinVerVerbosity>
+    <MinVerAutoIncrement>patch</MinVerAutoIncrement>
+    <MinVerMinimumMajorMinor>0.0</MinVerMinimumMajorMinor>
+  </PropertyGroup>
 </Project>
