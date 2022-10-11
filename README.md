@@ -127,13 +127,13 @@ $ dotnet search [query] --skip 10 --take 50   # skip 10, take 50
 git clone https://github.com/billpratt/dotnet-search
 ```
 ```
-cd dotnet-search/src/DotNetSearch
+cd dotnet-search/src/DotNet.Search
 ```
 ```
 dotnet pack -c release -o nupkg
 ```
 
-Output is located in ```src/DotNetSearch/nupkg```
+Output is located in ```src/DotNet.Search/nupkg```
 
 ### Uninstall
 

@@ -1,0 +1,6 @@
+<Project>
+ <Import Project="$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '../'))" />
+ <PropertyGroup>
+   <CentralPackagesFile>$(MSBuildThisFileDirectory)Packages.props</CentralPackagesFile>
+ </PropertyGroup>
+</Project>

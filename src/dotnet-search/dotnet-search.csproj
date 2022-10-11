@@ -34,10 +34,4 @@ Example: ```dotnet search Microsoft.EntityFrameworkCore```</Description>
     <ToolCommandName>dotnet-search</ToolCommandName>
     <PackageType>DotnetTool</PackageType>
   </PropertyGroup>
-
-  <ItemGroup>
-    <PackageReference Include="McMaster.Extensions.CommandLineUtils" />
-    <PackageReference Include="Newtonsoft.Json" />
-    <PackageReference Include="Microsoft.AspNet.WebApi.Client" />
-  </ItemGroup>
 </Project>

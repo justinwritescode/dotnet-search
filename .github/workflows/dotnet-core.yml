@@ -18,8 +18,8 @@ jobs:
       with:
         dotnet-version: 3.1.301
     - name: Install dependencies
-      run: dotnet restore src/DotNetSearch.sln
+      run: dotnet restore src/DotNet.Search.sln
     - name: Build
-      run: dotnet build --configuration Release --no-restore  src/DotNetSearch.sln
+      run: dotnet build --configuration Release --no-restore  src/DotNet.Search.sln
     - name: Test
-      run: dotnet test --no-restore --verbosity normal  src/DotNetSearch.sln
+      run: dotnet test --no-restore --verbosity normal  src/DotNet.Search.sln
