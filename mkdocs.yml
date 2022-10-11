@@ -6,3 +6,5 @@ repo_url: https://github.com/justinwritescode/dotnet-search
 repo_name: justinwritescode/dotnet-search
 edit_uri: "tree/main/docs"
 docs_dir: docs
+nav:
+  - README.md
