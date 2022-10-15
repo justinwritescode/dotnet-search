@@ -7,8 +7,4 @@ repo_name: justinwritescode/dotnet-search
 edit_uri: "tree/main/docs"
 docs_dir: docs
 nav:
-<<<<<<< HEAD
   - README.md
-=======
-  - dotnet-search: index.md
->>>>>>> f4d6ac7 (fii)
