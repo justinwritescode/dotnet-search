@@ -1,4 +1,5 @@
 # File created using '.gitignore Generator' for Visual Studio Code: https://bit.ly/vscode-gig
+<<<<<<< HEAD
 # Created by https://www.toptal.com/developers/gitignore/api/visualstudiocode,visualstudio,visualbasic,test,ssh,spreadsheet,serverless,osx,microsoftoffice,macos,linux,executable,dotnetcore,dotfilessh,diskimage,datarecovery,database,data,csharp,compressedarchive,compressed,certificates,archive,archives,azurefunctions,diff,dotenv,dotsettings,git,gitbook,text,textpattern
 # Edit at https://www.toptal.com/developers/gitignore?templates=visualstudiocode,visualstudio,visualbasic,test,ssh,spreadsheet,serverless,osx,microsoftoffice,macos,linux,executable,dotnetcore,dotfilessh,diskimage,datarecovery,database,data,csharp,compressedarchive,compressed,certificates,archive,archives,azurefunctions,diff,dotenv,dotsettings,git,gitbook,text,textpattern
 
@@ -69,6 +70,10 @@
 ### AzureFunctions ###
 # Azure Functions localsettings file
 local.settings.json
+=======
+# Created by https://www.toptal.com/developers/gitignore/api/visualstudiocode,visualstudio,visualbasic,test,ssh,spreadsheet,serverless,osx,microsoftoffice,macos,linux,dotnetcore,dotfilessh,diskimage,datarecovery,database,data,csharp,compressedarchive,compressed,certificates,executable
+# Edit at https://www.toptal.com/developers/gitignore?templates=visualstudiocode,visualstudio,visualbasic,test,ssh,spreadsheet,serverless,osx,microsoftoffice,macos,linux,dotnetcore,dotfilessh,diskimage,datarecovery,database,data,csharp,compressedarchive,compressed,certificates,executable
+>>>>>>> bbd5981 (Fixing .gitignore)
 
 ### certificates ###
 *.pem
@@ -79,6 +84,7 @@ local.settings.json
 *.priv
 
 ### Compressed ###
+<<<<<<< HEAD
 *.pkg
 *.sit
 *.sitx
@@ -86,6 +92,24 @@ local.settings.json
 
 ### CompressedArchive ###
 
+=======
+*.7z
+*.deb
+*.gz
+*.pkg
+*.rar
+*.rpm
+*.sit
+*.sitx
+*.tar
+*.zip
+*.zipx
+*.tgz
+
+### CompressedArchive ###
+
+### Mostly from https://en.wikipedia.org/wiki/List_of_archive_formats
+>>>>>>> bbd5981 (Fixing .gitignore)
 
 ## Archiving and compression
 # Open source file format. Used by 7-Zip.
@@ -110,6 +134,10 @@ local.settings.json
 # Proprietary format from the ZipTV Compression Components
 *.bh
 # The Microsoft Windows native archive format, which is also used by many commercial installers such as InstallShield and WISE.
+<<<<<<< HEAD
+=======
+*.cab
+>>>>>>> bbd5981 (Fixing .gitignore)
 # Originally DOS, now DOS and Windows 	Created by Yaakov Gringeler; released last in 2003 (Compressia 1.0.0.1 beta), now apparently defunct. Free trial of 30 days lets user create and extract archives; after that it is possible to extract, but not to create.
 *.car
 # Open source file format.
@@ -123,9 +151,17 @@ local.settings.json
 # ??
 *.dgc
 # Apple Disk Image upports "Internet-enabled" disk images, which, once downloaded, are automatically decompressed, mounted, have the contents extracted, and thrown away. Currently, Safari is the only browser that supports this form of extraction; however, the images can be manually extracted as well. This format can also be password-protected or encrypted with 128-bit or 256-bit AES encryption.
+<<<<<<< HEAD
 # Enterprise Java Archive archive
 *.ear
 # ETSoft compressed archive
+=======
+*.dmg
+# Enterprise Java Archive archive
+*.ear
+# ETSoft compressed archive
+*.egg
+>>>>>>> bbd5981 (Fixing .gitignore)
 # The predecessor of DGCA.
 *.gca
 # Originally DOS 	Yes, but may be covered by patents 	DOS era format; uses arithmetic/Markov coding
@@ -135,6 +171,10 @@ local.settings.json
 # Produced by ICEOWS program. Excels at text file compression.
 *.ice
 # Java archive, compatible with ZIP files
+<<<<<<< HEAD
+=======
+*.jar
+>>>>>>> bbd5981 (Fixing .gitignore)
 # Open sourced archiver with compression using the PAQ family of algorithms and optional encryption.
 *.kgb
 # Originally DOS, now multiple 	Multiple 	Yes 	The standard format on Amiga.
@@ -196,6 +236,10 @@ local.settings.json
 # File-based disk image format developed to deploy Microsoft Windows.
 *.wim
 # XAR
+<<<<<<< HEAD
+=======
+*.xar
+>>>>>>> bbd5981 (Fixing .gitignore)
 # Native format of the Open Source KiriKiri Visual Novel engine. Uses combination of block splitting and zlib compression. The filenames and pathes are stored in UTF-16 format. For integrity check, the Adler-32 hashsum is used. For many commercial games, the files are encrypted (and decoded on runtime) via so-called "cxdec" module, which implements xor-based encryption.
 *.xp3
 # Yamazaki zipper archive. Compression format used in DeepFreezer archiver utility created by Yamazaki Satoshi. Read and write support exists in TUGZip, IZArc and ZipZag
@@ -598,7 +642,14 @@ FodyWeavers.xsd
 .history/
 
 # Windows Installer files from build outputs
+<<<<<<< HEAD
 *.msix
+=======
+*.msi
+*.msix
+*.msm
+*.msp
+>>>>>>> bbd5981 (Fixing .gitignore)
 
 # JetBrains Rider
 *.sln.iml
@@ -634,23 +685,41 @@ FodyWeavers.xsd
 *.par2
 
 
+<<<<<<< HEAD
 ### Diff ###
 *.patch
 *.diff
 
 ### dotenv ###
 .env
+=======
+### DiskImage ###
+*.iso
+*.toast
+*.vcd
+>>>>>>> bbd5981 (Fixing .gitignore)
 
 ### DotfilesSh ###
 local-patch
 patched-src
 
+<<<<<<< HEAD
 ### DiskImage ###
 *.toast
 *.vcd
 
 ### DotSettings ###
 *.DotSettings
+=======
+### DotnetCore ###
+# .NET Core build folders
+bin/
+obj/
+
+# Common node modules locations
+/node_modules
+/wwwroot/node_modules
+>>>>>>> bbd5981 (Fixing .gitignore)
 
 ### Executable ###
 *.app
@@ -663,6 +732,7 @@ patched-src
 *.vb
 *.wsf
 
+<<<<<<< HEAD
 ### Git ###
 # Created by git for backups. To disable backups in Git:
 # $ git config --global mergetool.keepBackup false
@@ -704,6 +774,21 @@ obj/
 # Common node modules locations
 /node_modules
 /wwwroot/node_modules
+=======
+### Linux ###
+
+# temporary files which can be created if a process still has a handle open of a deleted file
+.fuse_hidden*
+
+# KDE directory preferences
+.directory
+
+# Linux trash folder which might appear on any partition or disk
+.Trash-*
+
+# .nfs files are created when an open file is removed but is still being accessed
+.nfs*
+>>>>>>> bbd5981 (Fixing .gitignore)
 
 ### macOS ###
 # General
@@ -863,6 +948,7 @@ Backup of *.doc*
 *tmpfiles
 *lol
 
+<<<<<<< HEAD
 ### Text ###
 *.doc
 *.docx
@@ -886,6 +972,8 @@ textpattern/
 HISTORY.txt
 README.txt
 
+=======
+>>>>>>> bbd5981 (Fixing .gitignore)
 ### VisualBasic ###
 *.csi
 *.exp
@@ -924,6 +1012,7 @@ $RECYCLE.BIN/
 
 # Directories potentially created on remote AFP share
 
+<<<<<<< HEAD
 ### Linux ###
 
 # temporary files which can be created if a process still has a handle open of a deleted file
@@ -938,6 +1027,8 @@ $RECYCLE.BIN/
 # .nfs files are created when an open file is removed but is still being accessed
 .nfs*
 
+=======
+>>>>>>> bbd5981 (Fixing .gitignore)
 ### VisualStudioCode ###
 !.vscode/*.code-snippets
 
@@ -1137,7 +1228,11 @@ $RECYCLE.BIN/
 ### VisualStudio Patch ###
 # Additional files built by Visual Studio
 
+<<<<<<< HEAD
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,visualstudio,visualbasic,test,ssh,spreadsheet,serverless,osx,microsoftoffice,macos,linux,executable,dotnetcore,dotfilessh,diskimage,datarecovery,database,data,csharp,compressedarchive,compressed,certificates,archive,archives,azurefunctions,diff,dotenv,dotsettings,git,gitbook,text,textpattern
+=======
+# End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,visualstudio,visualbasic,test,ssh,spreadsheet,serverless,osx,microsoftoffice,macos,linux,dotnetcore,dotfilessh,diskimage,datarecovery,database,data,csharp,compressedarchive,compressed,certificates,executable
+>>>>>>> bbd5981 (Fixing .gitignore)
 
 # Custom rules (everything added below won't be overriden by 'Generate .gitignore File' if you use 'Update' option)
 
@@ -1149,4 +1244,8 @@ $RECYCLE.BIN/
 *.generated.*
 *.nuget.g.props
 *.nuget.g.targets
+<<<<<<< HEAD
 *.dll
+=======
+*.dll
+>>>>>>> bbd5981 (Fixing .gitignore)

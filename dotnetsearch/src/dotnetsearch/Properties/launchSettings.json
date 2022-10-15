@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "dotnetsearch": {
+      "commandName": "Project",
+      "commandLineArgs": ""
+    }
+  }
+}
