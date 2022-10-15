@@ -1,5 +1,4 @@
 # File created using '.gitignore Generator' for Visual Studio Code: https://bit.ly/vscode-gig
-<<<<<<< HEAD
 # Created by https://www.toptal.com/developers/gitignore/api/visualstudiocode,visualstudio,visualbasic,test,ssh,spreadsheet,serverless,osx,microsoftoffice,macos,linux,executable,dotnetcore,dotfilessh,diskimage,datarecovery,database,data,csharp,compressedarchive,compressed,certificates,archive,archives,azurefunctions,diff,dotenv,dotsettings,git,gitbook,text,textpattern
 # Edit at https://www.toptal.com/developers/gitignore?templates=visualstudiocode,visualstudio,visualbasic,test,ssh,spreadsheet,serverless,osx,microsoftoffice,macos,linux,executable,dotnetcore,dotfilessh,diskimage,datarecovery,database,data,csharp,compressedarchive,compressed,certificates,archive,archives,azurefunctions,diff,dotenv,dotsettings,git,gitbook,text,textpattern
 
@@ -70,10 +69,6 @@
 ### AzureFunctions ###
 # Azure Functions localsettings file
 local.settings.json
-=======
-# Created by https://www.toptal.com/developers/gitignore/api/visualstudiocode,visualstudio,visualbasic,test,ssh,spreadsheet,serverless,osx,microsoftoffice,macos,linux,dotnetcore,dotfilessh,diskimage,datarecovery,database,data,csharp,compressedarchive,compressed,certificates,executable
-# Edit at https://www.toptal.com/developers/gitignore?templates=visualstudiocode,visualstudio,visualbasic,test,ssh,spreadsheet,serverless,osx,microsoftoffice,macos,linux,dotnetcore,dotfilessh,diskimage,datarecovery,database,data,csharp,compressedarchive,compressed,certificates,executable
->>>>>>> bbd5981 (Fixing .gitignore)
 
 ### certificates ###
 *.pem
@@ -84,7 +79,6 @@ local.settings.json
 *.priv
 
 ### Compressed ###
-<<<<<<< HEAD
 *.pkg
 *.sit
 *.sitx
@@ -92,24 +86,6 @@ local.settings.json
 
 ### CompressedArchive ###
 
-=======
-*.7z
-*.deb
-*.gz
-*.pkg
-*.rar
-*.rpm
-*.sit
-*.sitx
-*.tar
-*.zip
-*.zipx
-*.tgz
-
-### CompressedArchive ###
-
-### Mostly from https://en.wikipedia.org/wiki/List_of_archive_formats
->>>>>>> bbd5981 (Fixing .gitignore)
 
 ## Archiving and compression
 # Open source file format. Used by 7-Zip.
@@ -134,10 +110,6 @@ local.settings.json
 # Proprietary format from the ZipTV Compression Components
 *.bh
 # The Microsoft Windows native archive format, which is also used by many commercial installers such as InstallShield and WISE.
-<<<<<<< HEAD
-=======
-*.cab
->>>>>>> bbd5981 (Fixing .gitignore)
 # Originally DOS, now DOS and Windows 	Created by Yaakov Gringeler; released last in 2003 (Compressia 1.0.0.1 beta), now apparently defunct. Free trial of 30 days lets user create and extract archives; after that it is possible to extract, but not to create.
 *.car
 # Open source file format.
@@ -151,17 +123,9 @@ local.settings.json
 # ??
 *.dgc
 # Apple Disk Image upports "Internet-enabled" disk images, which, once downloaded, are automatically decompressed, mounted, have the contents extracted, and thrown away. Currently, Safari is the only browser that supports this form of extraction; however, the images can be manually extracted as well. This format can also be password-protected or encrypted with 128-bit or 256-bit AES encryption.
-<<<<<<< HEAD
 # Enterprise Java Archive archive
 *.ear
 # ETSoft compressed archive
-=======
-*.dmg
-# Enterprise Java Archive archive
-*.ear
-# ETSoft compressed archive
-*.egg
->>>>>>> bbd5981 (Fixing .gitignore)
 # The predecessor of DGCA.
 *.gca
 # Originally DOS 	Yes, but may be covered by patents 	DOS era format; uses arithmetic/Markov coding
@@ -171,10 +135,6 @@ local.settings.json
 # Produced by ICEOWS program. Excels at text file compression.
 *.ice
 # Java archive, compatible with ZIP files
-<<<<<<< HEAD
-=======
-*.jar
->>>>>>> bbd5981 (Fixing .gitignore)
 # Open sourced archiver with compression using the PAQ family of algorithms and optional encryption.
 *.kgb
 # Originally DOS, now multiple 	Multiple 	Yes 	The standard format on Amiga.
@@ -236,10 +196,6 @@ local.settings.json
 # File-based disk image format developed to deploy Microsoft Windows.
 *.wim
 # XAR
-<<<<<<< HEAD
-=======
-*.xar
->>>>>>> bbd5981 (Fixing .gitignore)
 # Native format of the Open Source KiriKiri Visual Novel engine. Uses combination of block splitting and zlib compression. The filenames and pathes are stored in UTF-16 format. For integrity check, the Adler-32 hashsum is used. For many commercial games, the files are encrypted (and decoded on runtime) via so-called "cxdec" module, which implements xor-based encryption.
 *.xp3
 # Yamazaki zipper archive. Compression format used in DeepFreezer archiver utility created by Yamazaki Satoshi. Read and write support exists in TUGZip, IZArc and ZipZag
@@ -642,14 +598,7 @@ FodyWeavers.xsd
 .history/
 
 # Windows Installer files from build outputs
-<<<<<<< HEAD
 *.msix
-=======
-*.msi
-*.msix
-*.msm
-*.msp
->>>>>>> bbd5981 (Fixing .gitignore)
 
 # JetBrains Rider
 *.sln.iml
@@ -685,41 +634,23 @@ FodyWeavers.xsd
 *.par2
 
 
-<<<<<<< HEAD
 ### Diff ###
 *.patch
 *.diff
 
 ### dotenv ###
 .env
-=======
-### DiskImage ###
-*.iso
-*.toast
-*.vcd
->>>>>>> bbd5981 (Fixing .gitignore)
 
 ### DotfilesSh ###
 local-patch
 patched-src
 
-<<<<<<< HEAD
 ### DiskImage ###
 *.toast
 *.vcd
 
 ### DotSettings ###
 *.DotSettings
-=======
-### DotnetCore ###
-# .NET Core build folders
-bin/
-obj/
-
-# Common node modules locations
-/node_modules
-/wwwroot/node_modules
->>>>>>> bbd5981 (Fixing .gitignore)
 
 ### Executable ###
 *.app
@@ -732,7 +663,6 @@ obj/
 *.vb
 *.wsf
 
-<<<<<<< HEAD
 ### Git ###
 # Created by git for backups. To disable backups in Git:
 # $ git config --global mergetool.keepBackup false
@@ -774,21 +704,6 @@ obj/
 # Common node modules locations
 /node_modules
 /wwwroot/node_modules
-=======
-### Linux ###
-
-# temporary files which can be created if a process still has a handle open of a deleted file
-.fuse_hidden*
-
-# KDE directory preferences
-.directory
-
-# Linux trash folder which might appear on any partition or disk
-.Trash-*
-
-# .nfs files are created when an open file is removed but is still being accessed
-.nfs*
->>>>>>> bbd5981 (Fixing .gitignore)
 
 ### macOS ###
 # General
@@ -948,7 +863,6 @@ Backup of *.doc*
 *tmpfiles
 *lol
 
-<<<<<<< HEAD
 ### Text ###
 *.doc
 *.docx
@@ -972,8 +886,6 @@ textpattern/
 HISTORY.txt
 README.txt
 
-=======
->>>>>>> bbd5981 (Fixing .gitignore)
 ### VisualBasic ###
 *.csi
 *.exp
@@ -1012,7 +924,6 @@ $RECYCLE.BIN/
 
 # Directories potentially created on remote AFP share
 
-<<<<<<< HEAD
 ### Linux ###
 
 # temporary files which can be created if a process still has a handle open of a deleted file
@@ -1027,8 +938,6 @@ $RECYCLE.BIN/
 # .nfs files are created when an open file is removed but is still being accessed
 .nfs*
 
-=======
->>>>>>> bbd5981 (Fixing .gitignore)
 ### VisualStudioCode ###
 !.vscode/*.code-snippets
 
@@ -1228,11 +1137,7 @@ $RECYCLE.BIN/
 ### VisualStudio Patch ###
 # Additional files built by Visual Studio
 
-<<<<<<< HEAD
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,visualstudio,visualbasic,test,ssh,spreadsheet,serverless,osx,microsoftoffice,macos,linux,executable,dotnetcore,dotfilessh,diskimage,datarecovery,database,data,csharp,compressedarchive,compressed,certificates,archive,archives,azurefunctions,diff,dotenv,dotsettings,git,gitbook,text,textpattern
-=======
-# End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,visualstudio,visualbasic,test,ssh,spreadsheet,serverless,osx,microsoftoffice,macos,linux,dotnetcore,dotfilessh,diskimage,datarecovery,database,data,csharp,compressedarchive,compressed,certificates,executable
->>>>>>> bbd5981 (Fixing .gitignore)
 
 # Custom rules (everything added below won't be overriden by 'Generate .gitignore File' if you use 'Update' option)
 
@@ -1244,8 +1149,86 @@ $RECYCLE.BIN/
 *.generated.*
 *.nuget.g.props
 *.nuget.g.targets
-<<<<<<< HEAD
 *.dll
-=======
-*.dll
->>>>>>> bbd5981 (Fixing .gitignore)
+### ⬇️ Start Common Files to Ignore (because they're restored when the RestoreCommonFiles.restoreproj is built) ⬇️ ###
+/Users/david/GitHub/dotnet-search/NuGet.config
+/Users/david/GitHub/dotnet-search/Directory.Build.props
+/Users/david/GitHub/dotnet-search/Packages.props
+/Users/david/GitHub/dotnet-search/Directory.Build.targets
+/Users/david/GitHub/dotnet-search/.gitignore
+/Users/david/GitHub/dotnet-search/global.json
+/Users/david/GitHub/dotnet-search/Directory.Build/TestingLocal.props
+/Users/david/GitHub/dotnet-search/Directory.Build/CustomBeforeAndAfterNoTargets.props
+/Users/david/GitHub/dotnet-search/Directory.Build/PackageMetadata.props
+/Users/david/GitHub/dotnet-search/Directory.Build/MinVer.targets
+/Users/david/GitHub/dotnet-search/Directory.Build/PackageTags.props
+/Users/david/GitHub/dotnet-search/Directory.Build/PackageProjectUrl.targets
+/Users/david/GitHub/dotnet-search/Directory.Build/PackageReadme.targets
+/Users/david/GitHub/dotnet-search/Directory.Build/CustomBeforeAndAfterCentralPackageVersions.props
+/Users/david/GitHub/dotnet-search/Directory.Build/Copyright.targets
+/Users/david/GitHub/dotnet-search/Directory.Build/Authors-Owners.props
+/Users/david/GitHub/dotnet-search/Directory.Build/CopyFilesAndSymbolsFromPackages.props
+/Users/david/GitHub/dotnet-search/Directory.Build/Authors-Owners.targets
+/Users/david/GitHub/dotnet-search/Directory.Build/MinVer.props
+/Users/david/GitHub/dotnet-search/Directory.Build/Baz.props
+/Users/david/GitHub/dotnet-search/Directory.Build/CodeDocumentation.props
+/Users/david/GitHub/dotnet-search/Directory.Build/ItemDefinitionGroups.props
+/Users/david/GitHub/dotnet-search/Directory.Build/NuGetizer.props
+/Users/david/GitHub/dotnet-search/Directory.Build/NuGetOutputs.props
+/Users/david/GitHub/dotnet-search/Directory.Build/PackageDescription.targets
+/Users/david/GitHub/dotnet-search/Directory.Build/NoWarn.props
+/Users/david/GitHub/dotnet-search/Directory.Build/PackageProjectUrl.props
+/Users/david/GitHub/dotnet-search/Directory.Build/BuildConfigurations.props
+/Users/david/GitHub/dotnet-search/Directory.Build/CodeGeneration.props
+/Users/david/GitHub/dotnet-search/Directory.Build/AssemblySigning.props
+/Users/david/GitHub/dotnet-search/Directory.Build/TestingLocal.targets
+/Users/david/GitHub/dotnet-search/Directory.Build/PackageIcon.props
+/Users/david/GitHub/dotnet-search/Directory.Build/PackageTags.targets
+/Users/david/GitHub/dotnet-search/Directory.Build/CustomBeforeAndAfterTraversal.props
+/Users/david/GitHub/dotnet-search/Directory.Build/PackageMetadata.targets
+/Users/david/GitHub/dotnet-search/Directory.Build/NuGetSources.props
+/Users/david/GitHub/dotnet-search/Versions/Versions.Local.json
+/Users/david/GitHub/dotnet-search/Versions/Versions.Debug.props
+/Users/david/GitHub/dotnet-search/Versions/Versions.Local.props
+/Users/david/GitHub/dotnet-search/Versions/Versions.Debug.json
+/Users/david/GitHub/dotnet-search/docs/CODE_OF_CONDUCT.md
+/Users/david/GitHub/dotnet-search/docs/LICENSE.md
+/Users/david/GitHub/dotnet-search/docs/CODEOWNERS
+/Users/david/GitHub/dotnet-search/docs/SUPPORT.md
+/Users/david/GitHub/dotnet-search/docs/index.md
+/Users/david/GitHub/dotnet-search/docs/CONTRIBUTING.md
+/Users/david/GitHub/dotnet-search/Packages/GlobalCodeGenerators.pkgs
+/Users/david/GitHub/dotnet-search/Packages/XmlDocMd.pkgs
+/Users/david/GitHub/dotnet-search/Packages/Testing.pkgs
+/Users/david/GitHub/dotnet-search/Packages/EFCore.pkgs
+/Users/david/GitHub/dotnet-search/Packages/AnyOf.pkgs
+/Users/david/GitHub/dotnet-search/Packages/Microsoft.AspNetCore.pkgs
+/Users/david/GitHub/dotnet-search/Packages/Miscellany.pkgs
+/Users/david/GitHub/dotnet-search/Packages/Swashbuckle.pkgs
+/Users/david/GitHub/dotnet-search/Packages/NetAnalyzers.pkgs
+/Users/david/GitHub/dotnet-search/Packages/AzureFunctions.pkgs
+/Users/david/GitHub/dotnet-search/Packages/JustinWritesCode.pkgs
+/Users/david/GitHub/dotnet-search/Packages/MSBuildProjectCreator.pkgs
+/Users/david/GitHub/dotnet-search/Packages/Cryptography.pkgs
+/Users/david/GitHub/dotnet-search/Packages/Images.pkgs
+/Users/david/GitHub/dotnet-search/Packages/MSBuildSdks.pkgs
+/Users/david/GitHub/dotnet-search/Packages/GlobalBuild.pkgs
+/Users/david/GitHub/dotnet-search/Packages/Telegram.pkgs
+/Users/david/GitHub/dotnet-search/Packages/AutoMapper.pkgs
+/Users/david/GitHub/dotnet-search/Packages/NuGet.pkgs
+/Users/david/GitHub/dotnet-search/Packages/APIVersioning.pkgs
+/Users/david/GitHub/dotnet-search/Packages/Roslyn.pkgs
+/Users/david/GitHub/dotnet-search/Packages/Microsoft.Extensions.pkgs
+/Users/david/GitHub/dotnet-search/Packages/Validation.pkgs
+/Users/david/GitHub/dotnet-search/Packages/MSBuild.pkgs
+/Users/david/GitHub/dotnet-search/Packages/McMaster.CommandLineUtils.pkgs
+/Users/david/GitHub/dotnet-search/Packages/SlnGen.pkgs
+/Users/david/GitHub/dotnet-search/Packages/Azure.pkgs
+/Users/david/GitHub/dotnet-search/Packages/Testing.EfCore.pkgs
+/Users/david/GitHub/dotnet-search/Packages/Newtonsoft.Json.pkgs
+/Users/david/GitHub/dotnet-search/Packages/System.pkgs
+/Users/david/GitHub/dotnet-search/.vscode/tasks.json
+/Users/david/GitHub/dotnet-search/assets/JustinWritesCode.PublicKey
+/Users/david/GitHub/dotnet-search/assets/JustinWritesCode.snk
+/Users/david/GitHub/dotnet-search/.restored-files
+### ⬆️ End Common Files to Ignore (because they're restored when the RestoreCommonFiles.restoreproj is built) ⬆️ ###
