@@ -3,22 +3,22 @@ using Newtonsoft.Json;
 namespace DotNet.Search
 {
     /// <summary>
-    /// Represents a package version.
+    /// A record for a package's version
     /// </summary>
     public class PackageVersion
     {
         /// <summary>
-        /// The ID of the packafeversion.
+        /// The package version's ID
         /// </summary>
         [JsonProperty("@id")]
         public string Id { get; set; } = string.Empty;
         /// <summary>
-        /// The version string
+        /// The SemVer version number
         /// </summary>
         public string Version { get; set; } = string.Empty;
         /// <summary>
-        /// The number of downloads.
+        /// The number of times this particular version has been downloaded
         /// </summary>
-        public long Downloads { get; set; } = 0;
+        public int Downloads { get; set; }
     }
 }

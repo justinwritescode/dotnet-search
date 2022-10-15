@@ -2,9 +2,21 @@
 
 namespace DotNet.Search.Extensions
 {
+    /// <summary>
+    /// Formats an integer in an abbreviated form with a comma separator.
+    /// </summary>
     public static class IntegerFormatExtensions
     {
-        public static string ToAbbrString(this long value)
+        /// <summary>
+        /// Formats an integer in an abbreviated form with a comma separator.
+        /// </summary>
+        /// <example>
+        /// 1000 => 1K
+        /// 1000000 => 1M
+        /// </example>
+        /// <param name="value">The integer to be formatted</param>
+        /// <returns>The formatted string</returns>
+        public static string ToAbbrString(this int value)
         {
             switch(value)
             {

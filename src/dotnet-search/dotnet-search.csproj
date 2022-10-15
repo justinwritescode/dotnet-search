@@ -1,14 +1,17 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <ProjectGuid>a613a500-7240-4409-926d-2a420815c67e</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>DotNetSearch</RootNamespace>
-    <TargetFrameworks>netstandard2.0;netcoreapp3.1;net6.0</TargetFrameworks>
+    <TargetFrameworks>netcoreapp3.1;net6.0</TargetFrameworks>
     <PackageId>dotnet-search</PackageId>
     <Title>dotnet-search</Title>
+    <Authors>Justin Chase &amp; Bill Pratt</Authors>
+    <Owners>Justin Chase &amp; Bill Pratt</Owners>
+    <Company>Justin Chase</Company>
+    <Product>Justin Chase</Product>
+    <RootNamespace>DotNet.Search</RootNamespace>
     <Description>Search for Nuget packages using the .NET Core CLI.
 
-Example: ```dotnet search Microsoft.EntityFrameworkCore```</Description>
+Example: ```dotnet search Microsoft.Net.Http```</Description>
     <Copyright>Justin Chase &amp; Bill Pratt, All Rights Reserved</Copyright>
     <PackageTags>dotnet nuget search</PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
@@ -20,18 +23,29 @@ Example: ```dotnet search Microsoft.EntityFrameworkCore```</Description>
     <PreserveCompilationContext>true</PreserveCompilationContext>
     <ServerGarbageCollection>true</ServerGarbageCollection>
     <DebugType>portable</DebugType>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
-   <Author Include="Justin Chase" Email="justin@justinwritescode.com" /> 
-   <Author Include="Bill Pratt" /> 
-   <Owner Include="@(Author)" Email="%(Author.Email)" /> 
+    <Author Include="Justin Chase" Email="justin@justinwritescode.com" />
+    <Author Include="Bill Pratt" Email="bpratt@vistaprint.com" /> 
+    <Owner Include="Justin Chase" Email="justin@justinwritescode.com" />
   </ItemGroup>
-
+  
   <PropertyGroup>
     <PackAsTool>true</PackAsTool>
     <ToolCommandName>dotnet-search</ToolCommandName>
+    <IncludeSymbols>true</IncludeSymbols>
+    <IncludeSource>true</IncludeSource>
+    <IsPackable>true</IsPackable>
+    <IsNuGetized>true</IsNuGetized>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageType>DotnetTool</PackageType>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="McMaster.Extensions.CommandLineUtils" />
+    <PackageReference Include="Newtonsoft.Json" />
+    <PackageReference Include="Microsoft.AspNet.WebApi.Client" />
+    <GlobalPackageReference Remove="FluentBuilder" />
+  </ItemGroup>
 </Project>

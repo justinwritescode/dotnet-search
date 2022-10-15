@@ -19,23 +19,37 @@ namespace DotNet.Search
     [VersionOptionFromMember(MemberName = nameof(GetVersion))]
     class SearchCommand
     {
-        private static int MaxWordWrapLineLength = 20;
-        private static int MaxWordWrapColumnWidth = MaxWordWrapLineLength + 5;
-        private static int SkipResultsDefault = 0;
-        private static int TakeDefault = 10;
+        private const int MaxWordWrapLineLength = 20;
+        private const int MaxWordWrapColumnWidth = MaxWordWrapLineLength + 5;
+        private const int SkipResultsDefault = 0;
+        private const int TakeDefault = 10;
 
+        /// <summary>
+        /// The search terms used to find packages
+        /// </summary>
         [Required]
         [Argument(0, "query", Description = "The search terms used to find packages")]
         public string Query { get; set; } = string.Empty;
 
+        /// <summary>
+        /// <c>true</c> to include prerelease packages in the search results; otherwise, <c>false</c>.
+        /// </summary>
         [Option("--include-prerelease", "Include prerelease packages", CommandOptionType.NoValue)]
         public bool IncludePrerelease { get; set; }
+
+        /// <summary>
+        /// Number of results to skip. (Default: 0)
+        /// </summary>
 
         [Option("-s|--skip", "Number of results to skip. (Default: 0)", CommandOptionType.SingleValue)]
         public int Skip { get; set; } = SkipResultsDefault;
 
-        [Option("-t|--take", "Number of results to display. (Default: 10)", CommandOptionType.SingleValue)]
-        public long Take { get; set; } = TakeDefault;
+        /// <summary>
+        /// Number of results to return. (Default: 10)
+        /// </summary>
+        /// <value></value>
+        [Option("-t|--take", "Number of results to return. (Default: 10)", CommandOptionType.SingleValue)]
+        public int Take { get; set; } = TakeDefault;
 
         private async Task OnExecuteAsync()
         {
@@ -240,13 +254,12 @@ namespace DotNet.Search
                 Console.ResetColor();
                 Console.WriteLine($" by {string.Join(",", data.Authors)}\tv{data.Version}");
                 Console.WriteLine($"{data.Description}{Environment.NewLine}");
-                Console.WriteLine($"Tags: {string.Join(",", data.Tags)}");
+                Console.WriteLine($"Tags: {string.Join(',', data.Tags)}");
                 Console.WriteLine($"Downloads: {data.TotalDownloads.ToAbbrString()}");
                 Console.WriteLine($"{Environment.NewLine}----------------------{Environment.NewLine}");
             }
         }
 
-        private static string GetVersion()
-                    => typeof(SearchCommand).Assembly.GetCustomAttribute<AssemblyInformationalVersionAttribute>().InformationalVersion;
+        private static string GetVersion() => ThisAssembly.Info.InformationalVersion;
     }
 }

@@ -3,17 +3,17 @@ using System.Collections.Generic;
 namespace DotNet.Search
 {
     /// <summary>
-    /// Represents a search response.
+    /// A response from the search service.
     /// </summary>
     public class SearchResponse
     {
         /// <summary>
-        /// The total number of results.
+        /// The total number of results found.
         /// </summary>
-        public long TotalHits { get; set; }
+        public int TotalHits { get; set; }
         /// <summary>
-        /// The matching packages
+        /// The package payload
         /// </summary>
-        public IEnumerable<Package> Data { get; set; } = new List<Package>();
+        public IEnumerable<Package> Data { get; set; } = Array.Empty<Package>();
     }
 }

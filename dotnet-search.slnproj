@@ -1,4 +1,4 @@
-<Project Sdk="MSBuild.SolutionSdk">
+<Project Sdk="MSBuild.Solution.Sdk">
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <IncludeInSolutionFile>false</IncludeInSolutionFile>

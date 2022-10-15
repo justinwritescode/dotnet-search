@@ -1150,6 +1150,7 @@ $RECYCLE.BIN/
 *.nuget.g.props
 *.nuget.g.targets
 *.dll
+<<<<<<< HEAD
 ### ⬇️ Start Common Files to Ignore (because they're restored when the RestoreCommonFiles.restoreproj is built) ⬇️ ###
 /Users/david/GitHub/dotnet-search/NuGet.config
 /Users/david/GitHub/dotnet-search/Directory.Build.props
@@ -1232,3 +1233,6 @@ $RECYCLE.BIN/
 /Users/david/GitHub/dotnet-search/assets/JustinWritesCode.snk
 /Users/david/GitHub/dotnet-search/.restored-files
 ### ⬆️ End Common Files to Ignore (because they're restored when the RestoreCommonFiles.restoreproj is built) ⬆️ ###
+=======
+### Common Files to Ignore (because they're restored when the RestoreCommonFiles.restoreproj is built) ###
+>>>>>>> f4d6ac7 (fii)
