@@ -4,10 +4,6 @@
     <TargetFrameworks>netcoreapp3.1;net6.0</TargetFrameworks>
     <PackageId>dotnet-search</PackageId>
     <Title>dotnet-search</Title>
-    <Authors>Justin Chase &amp; Bill Pratt</Authors>
-    <Owners>Justin Chase &amp; Bill Pratt</Owners>
-    <Company>Justin Chase</Company>
-    <Product>Justin Chase</Product>
     <RootNamespace>DotNet.Search</RootNamespace>
     <Description>Search for Nuget packages using the .NET Core CLI.
 
