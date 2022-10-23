@@ -1,10 +1,11 @@
-<Project Sdk="MSBuild.Solution.Sdk">
+<Project Sdk="MSBuild.SolutionSdk">
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFrameworks>netcoreapp3.1;net6.0</TargetFrameworks>
     <IncludeInSolutionFile>false</IncludeInSolutionFile>
+    <EnableDefaultProjectItems>false</EnableDefaultProjectItems>
   </PropertyGroup>
   <ItemGroup>
-    <ProjectReference Include="./src/dotnet-search/dotnet-search.csproj" />
-    <ProjectReference Include="./test/dotnet-search-test/dotnet-search-test.csproj" />
+    <Project Include="./src/dotnet-search/dotnet-search.csproj" />
+    <Project Include="./test/dotnet-search-test/dotnet-search-test.csproj" />
   </ItemGroup>
 </Project>
