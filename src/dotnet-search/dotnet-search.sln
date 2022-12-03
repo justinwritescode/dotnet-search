@@ -1,0 +1,35 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dotnet-search", "dotnet-search.csproj", "{EF983ADD-2995-4999-8378-34E4C9772A40}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{F923EE9C-CA58-4DF2-9521-70D62EF84C6F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Local|Any CPU = Local|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		Staging|Any CPU = Staging|Any CPU
+		Release|Any CPU = Release|Any CPU
+		Testing|Any CPU = Testing|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EF983ADD-2995-4999-8378-34E4C9772A40}.Local|Any CPU.ActiveCfg = Local|Any CPU
+		{EF983ADD-2995-4999-8378-34E4C9772A40}.Local|Any CPU.Build.0 = Local|Any CPU
+		{EF983ADD-2995-4999-8378-34E4C9772A40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF983ADD-2995-4999-8378-34E4C9772A40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF983ADD-2995-4999-8378-34E4C9772A40}.Staging|Any CPU.ActiveCfg = Staging|Any CPU
+		{EF983ADD-2995-4999-8378-34E4C9772A40}.Staging|Any CPU.Build.0 = Staging|Any CPU
+		{EF983ADD-2995-4999-8378-34E4C9772A40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF983ADD-2995-4999-8378-34E4C9772A40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF983ADD-2995-4999-8378-34E4C9772A40}.Testing|Any CPU.ActiveCfg = Testing|Any CPU
+		{EF983ADD-2995-4999-8378-34E4C9772A40}.Testing|Any CPU.Build.0 = Testing|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EF983ADD-2995-4999-8378-34E4C9772A40} = {F923EE9C-CA58-4DF2-9521-70D62EF84C6F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C9C480C3-34A2-45A9-9A81-4768E721BB12}
+	EndGlobalSection
+EndGlobal

@@ -5,6 +5,8 @@
     <PackageId>dotnet-search</PackageId>
     <Title>dotnet-search</Title>
     <RootNamespace>DotNet.Search</RootNamespace>
+        <EnableGlobalCodeGenerators>true</EnableGlobalCodeGenerators>
+        <EnableThisAssembly>true</EnableThisAssembly>
     <Description>Search for Nuget packages using the .NET Core CLI.
 
 Example: ```dotnet search Microsoft.Net.Http```</Description>
